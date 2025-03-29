@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="hero" className="hero-pattern min-h-screen flex items-center pt-16">
+    <section id="hero" className="hero-pattern min-h-screen flex items-center pt-28">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 text-center lg:text-left">
