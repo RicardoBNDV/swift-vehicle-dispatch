@@ -25,7 +25,7 @@ const Navbar = () => {
     <header className="fixed w-full z-50 px-4 sm:px-6 lg:px-8 py-4">
       <nav 
         className={cn(
-          "flex items-center justify-between mx-auto max-w-7xl rounded-2xl transition-all duration-300",
+          "flex items-center justify-between mx-auto max-w-7xl rounded-[50px] transition-all duration-300",
           isScrolled 
             ? "bg-white shadow-lg py-3 px-6" 
             : "bg-white/90 backdrop-blur-sm shadow-md py-4 px-6"
@@ -71,7 +71,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="mt-2 rounded-2xl bg-white shadow-lg animate-fade-in p-4 mx-auto max-w-7xl">
+          <div className="mt-2 rounded-[50px] bg-white shadow-lg animate-fade-in p-4 mx-auto max-w-7xl">
             <div className="flex flex-col py-2 space-y-2">
               <MobileNavItem title="Services" href="#services" icon={<Truck size={18} />} setIsOpen={setIsOpen} />
               <MobileNavItem title="About Us" href="#about" icon={<Users size={18} />} setIsOpen={setIsOpen} />
