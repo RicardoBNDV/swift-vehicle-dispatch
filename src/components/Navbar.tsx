@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Truck, Users, Award, MessageSquare, Phone } from 'lucide-react';
@@ -23,36 +22,36 @@ const Navbar = () => {
 
   return (
     <header className="fixed w-full z-50 px-4 sm:px-6 lg:px-8 py-4">
-      <nav 
+      <nav
         className={cn(
           "flex items-center justify-between mx-auto max-w-7xl rounded-[50px] transition-all duration-300",
-          isScrolled 
-            ? "bg-white shadow-lg py-3 px-6" 
+          isScrolled
+            ? "bg-white shadow-lg py-3 px-6"
             : "bg-white/90 backdrop-blur-sm shadow-md py-4 px-6"
         )}
       >
         {/* Logo */}
         <div className="flex-shrink-0">
           <a href="#" className="flex items-center">
-            <span className="text-2xl font-bold gradient-text">SwiftDispatch</span>
+            <img src="/lovable-uploads/autotransfere-logo.png" alt="Logo" className="h-5" />
           </a>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-center space-x-1 flex-1 mx-4">
           <div className="flex space-x-6">
-            <NavItem title="Services" href="#services" icon={<Truck size={18} />} />
-            <NavItem title="About Us" href="#about" icon={<Users size={18} />} />
-            <NavItem title="Benefits" href="#benefits" icon={<Award size={18} />} />
-            <NavItem title="Testimonials" href="#testimonials" icon={<MessageSquare size={18} />} />
-            <NavItem title="Contact" href="#contact" icon={<Phone size={18} />} />
+            <NavItem title="Serviços" href="#services" icon={<Truck size={18} />} />
+            <NavItem title="Sobre Nós" href="#about" icon={<Users size={18} />} />
+            <NavItem title="Benefícios" href="#benefits" icon={<Award size={18} />} />
+            <NavItem title="Testemunhos" href="#testimonials" icon={<MessageSquare size={18} />} />
+            <NavItem title="Contato" href="#contact" icon={<Phone size={18} />} />
           </div>
         </div>
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button className="bg-gradient-primary text-white px-6 rounded-full hover:shadow-md transition-all duration-300">
-            Get Started
+          <Button className="bg-primary text-white px-6 rounded-full hover:shadow-md transition-all duration-300">
+            Acesso ao Sistema
           </Button>
         </div>
 
@@ -101,16 +100,16 @@ const NavItem = ({ title, href, icon }: { title: string; href: string; icon: Rea
   </a>
 );
 
-const MobileNavItem = ({ 
-  title, 
-  href, 
+const MobileNavItem = ({
+  title,
+  href,
   icon,
-  setIsOpen 
-}: { 
-  title: string; 
-  href: string; 
+  setIsOpen
+}: {
+  title: string;
+  href: string;
   icon: React.ReactNode;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>> 
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 }) => (
   <a
     href={href}

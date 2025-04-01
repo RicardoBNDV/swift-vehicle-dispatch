@@ -14,7 +14,7 @@ const Index = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "SwiftDispatch - Vehicle Documentation Services",
+    "name": "AutoTransfere | Seu Despachante Online",
     "description": "Professional vehicle documentation and dispatch services including registration, licensing, and ownership transfer.",
     "url": "https://swiftdispatch.com",
     "telephone": "(555) 123-4567",
@@ -51,7 +51,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>SwiftDispatch - Professional Vehicle Documentation Services</title>
+        <title>AutoTransfere | Seu Despachante Online</title>
         <meta name="description" content="Streamline your vehicle documentation with SwiftDispatch. Fast, secure, and reliable vehicle registration, licensing, and ownership transfer services." />
         <meta name="keywords" content="vehicle registration, license renewal, vehicle documentation, ownership transfer, dispatch service" />
         
